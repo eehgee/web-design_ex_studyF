@@ -1,0 +1,302 @@
+@charset "utf-8";
+
+/* 유튜브 웹스토리보이 참고 */
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #333;
+}
+
+#wrap{
+    width: 100%;
+    height: 100%;
+}
+
+#main{
+    width: 100%;
+    height: calc(100vh - 100px);
+    display: flex;
+}
+
+#aside{
+    width: 200px;
+    height: 100%;
+    background-color: rgb(63, 75, 20)
+}
+
+#aside .logo{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo h1 a img{
+    width: 170px;
+}
+
+#aside .nav{
+    width: 100%;
+    height: 80%;
+}
+
+.nav > ul{
+    padding: 10px;
+}
+
+.nav > ul > li > a{
+    display: block;
+    padding: 10px;
+    background-color: rgb(228, 239, 217);
+}
+
+.nav > ul > li > a:hover{
+    background-color: rgb(205, 220, 191);
+}
+
+.nav > ul > li > ul{
+    display: none;
+}
+
+.nav > ul > li > ul > li > a{
+    display: block;
+    padding: 10px;
+    background-color: rgb(228, 231, 217);
+}
+
+.nav > ul > li > ul > li > a:hover{
+    background-color: rgb(204, 206, 194);
+}
+
+#section{
+    width: 400px;
+    height: 100%;
+}
+
+.notice{
+    width: 100%;
+    height: 40%;
+    background-color: rgb(252, 247, 230)
+}
+
+.tab-menu{
+    padding: 10px;
+}
+
+.notice-btn{
+    margin-top: 30px;
+}
+
+.notice-btn a{
+    display: block;
+    background-color: rgb(215, 213, 200);
+    padding: 10px;
+}
+
+.notice-cont{
+    margin-top: 14px;
+    padding: 10px;
+    line-height: 2.8;
+    background-color: rgb(215, 213, 200);
+}
+
+.notice-cont ul li{
+    border-bottom: 1px solid #000;
+}
+
+.notice-cont ul li span{
+    margin-left: 43%;
+}
+
+.gallery{
+    width: 100%;
+    height: 40%;
+    background-color: rgb(108, 124, 93);
+}
+
+.gallery-btn{
+    margin-top: 30px;
+}
+
+.gallery-btn a{
+    display: block;
+    background-color: rgb(211, 220, 202);
+    padding: 10px;
+}
+
+.gallery-cont{
+    text-align: center;
+    margin-top: 14px;
+    background-color: rgb(211, 220, 202);
+}
+
+.gallery-cont ul{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 5px;
+}
+
+.gallery-cont ul li a img{
+    width: 150px;
+    height: 160px;
+    padding: 7px;
+}
+
+.shortcuts{
+    width: 100%;
+    height: 20%;
+    text-align: center;
+    background-color: rgb(252, 247, 230)
+}
+
+.shortcuts ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.shortcuts ul li a img{
+    width: 80px;
+    height: 90px;
+    padding: 10px;
+}
+
+#slider{
+    width: calc(100% - 600px);
+    height: 100%;
+    overflow: hidden;
+}
+
+.sliderwrap{
+    width: 100%;
+    height: 300vh;
+}
+
+.sliding{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.sliding img{
+    width: 100%;
+    height: 100vh;
+    vertical-align: top;
+}
+
+.sliding span{
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 20px 60px;
+    color: #fff;
+    font-size: 20px;
+}
+
+#footer{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    background-color: rgb(200, 199, 199);
+}
+
+#footer .foot1{
+    width: 20%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer .foot2{
+    width: 60%;
+    height: 100px;
+}
+
+.foot2 .foot2_1 ul{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.foot2_1 ul li{
+    border-right: 1px solid #000;
+}
+
+.foot2_1 ul li:last-child{
+    border: 0;
+}
+
+.foot2_1 ul li a{
+    padding: 10px;
+}
+
+.foot2_2{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#footer .foot3{
+    width: 20%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.foot3 select{
+    width: 170px;
+    height: 30px;
+    border: 2px solid #000;
+}
+
+.popup-review{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 450px;
+    height: 450px;
+    border: 2px solid #000;
+    background-color: aliceblue;
+    display: none;
+}
+
+.popup-title{
+    padding: 10px;
+    text-align: center;
+}
+
+.popup-title p{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.popup-close{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    background-color: azure;
+    padding: 20px 20px;
+}
+
+
